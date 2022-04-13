@@ -5,6 +5,7 @@ body {
     caret-color: var(--color-font);
     transition: color, background-color 0.5s ease 0s;
     letter-spacing: -0.0125em;
+    margin: 0px;
 }
 ::selection {
     background: var(--color-teal);
@@ -74,7 +75,7 @@ ul {
     margin-block-end: 1.25em;
 }
 li {
-    line-height: 2em;
+    /* line-height: 2em; */
 }
 blockquote {
     border-left: 0.25em solid var(--color-gray-3);

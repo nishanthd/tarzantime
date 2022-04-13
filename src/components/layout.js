@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "gatsby"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
+import { WiMoonAltThirdQuarter, WiMoonAltFirstQuarter } from 'react-icons/wi';
+
 
 class Layout extends Component {
   render() {
-    const { title, children} = this.props
+    const { title, children } = this.props
     const toggler = (
       <div className="toggler">
         <ThemeToggler>{({ theme, toggleTheme }) => (
@@ -19,11 +21,11 @@ class Layout extends Component {
             />
             {theme === "dark" ? (
               <div className="tog-text">
-                Light
+                <WiMoonAltFirstQuarter className="header-icon"  color={'white'} />
               </div>
             ) : (
               <div className="tog-text">
-                Dark
+                <WiMoonAltThirdQuarter size={20} color={'black'} />
               </div>
             )}
           </label>
@@ -42,17 +44,20 @@ class Layout extends Component {
           </Link>
           <div className="nav-container">
             <ul className="header-nav">
-              <li id="header-nav-first"><Link to={`/tags`}>Tags</Link></li>
-              <li><Link to={`/search`}>Search</Link></li>
-              <li>{toggler}</li>
             </ul>
             <ul className="header-link">
-              <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-              <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/nishanthd" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li>
+                <Link to='/about'>
+                  About
+                </Link>
+              </li>
+              <li>|</li>
+              <li>{toggler}</li>
             </ul>
           </div>
         </div>
-        <main>{children}</main>
+        <main className='content-container'>{children}</main>
         <footer className="footer-copyright">
           © {new Date().getFullYear()} {title}, Built with
           {` `}

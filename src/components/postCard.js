@@ -26,7 +26,7 @@ class PostCard extends Component {
           <section>
             <p
               dangerouslySetInnerHTML={{
-              __html: props.node.frontmatter.description || props.node.excerpt,
+              __html: props.node.excerpt,
               }}
             />
           </section>

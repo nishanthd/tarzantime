@@ -23,9 +23,9 @@ class BlogPostTemplate extends React.Component {
         <hr className="contour"/>
         <article>
           <header className="post-header">
-            <h1>
+            <h2>
               {post.frontmatter.title}
-            </h1>
+            </h2>
             <p>
               {post.frontmatter.date}
             </p>

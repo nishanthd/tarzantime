@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
+
 :root{
   overflow-y: scroll;
 
   /* Fonts */
-  --font-title: 'Playfair Display', serif;
+  --font-title: 'Menlo';
   --font-sans-serif: 'Open Sans', sans-serif;
   --font-serif: serif;
   --font-mono: 'IBM Plex Mono', monospace;
@@ -17,9 +18,10 @@
 }
 
 body.light {
-  --color-bg: rgba(255, 255, 255, 0.9);
-  --color-font: rgba(0, 0, 0, 0.8);
+  --color-bg:#ffffff2e;
+  --color-font: rgb(0, 0, 0);
   --color-postcard: rgba(0, 0, 0, 0.1);
+  --color-header: hsl(0, 0%, 100%);
 
   --color-blue: rgb(0, 122, 255);
   --color-green: rgb(52, 199, 89);
@@ -39,9 +41,10 @@ body.light {
 }
 
 body.dark {
-  --color-bg: rgba(0, 0, 0, 0.9);
-  --color-font: rgba(255, 255, 255, 0.8);
-  --color-postcard: rgba(255, 255, 255, 0.1);
+  --color-bg: #303030;
+  --color-font: #ffffff;
+  --color-postcard: rgb(0 0 0);
+  --color-header: rgba(0, 0, 0, 0.774);
 
   --color-blue: rgb(10, 132, 255);
   --color-green: rgb(48, 209, 88);
