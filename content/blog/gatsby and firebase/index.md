@@ -1,11 +1,12 @@
 ---
-title: Deploying gatsby project in FireBase
-date: "2021-07-11T22:12:03.284Z"
+title: Deploying gatsby project in Firebase
+date: "2021-05-09T22:12:03.284Z"
 tags: ["gatsby", "firebase"]
 description: "Gatsby and Firebase"
 thumbnail: ./gatsby-firebase.jpeg
 folder: blog
 ---
+when we use gatsby for content-oriented usecase such us blogs and articles , you dont need to deploy in dedicated servers rather can use free static host providers like Firebase,Github,Gatsby and more. Now Lets see how to deploy your gatsby project for free in Firebase. 
 
 ####Pre-requisites
 1. Gatsby Project on your local machine

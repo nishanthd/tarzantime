@@ -1,13 +1,11 @@
 ---
 title: Gatsby Explained
-date: "2021-07-10T22:12:03.284Z"
+date: "2021-05-08T22:12:03.284Z"
 tags: ["gatsby", "reactjs"]
 description: "Gatsby Explained"
 thumbnail: ./docs-gatsby.jpeg
 folder: blog
 ---
-
-#####What is Gatsby ?
 
 Gatsby is an frontend framework which makes use of GraphQL, ReactJS and many other javascript libraries. It is so famous for its high speed performance and SEO.It has lots of starter templates which helps you build your pages quick.
 

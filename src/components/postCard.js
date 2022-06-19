@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "gatsby"
-import Tags from "./tags"
 
 class PostCard extends Component {
   render() {
@@ -8,7 +7,7 @@ class PostCard extends Component {
     return (
       <div key={props.node.fields.slug}>
         <div className="post-card">
-          <Tags tags={props.node.frontmatter.tags}/>
+          {/* <Tags tags={props.node.frontmatter.tags}/> */}
           <header>
             <h1>
               <Link to={props.node.fields.slug}>

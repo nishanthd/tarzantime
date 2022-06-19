@@ -1,17 +1,13 @@
 ---
 title: MongoDB and aggregation
-date: "2021-07-01T22:12:03.284Z"
+date: "2022-04-14T22:12:03.284Z"
 tags: ['mongodb','aggregation','springboot']
 description: "Mongodb And Aggregation"
 thumbnail: ./mongodb-image.jpeg
 folder: blog
 ---
 
-Is MongoDB NoSQL ? In a way yes , but lets go through one of the features of it before you believe it.
-
-###Aggregation
-
-Aggregation operations process data records and return computed results. Aggregation operations group values from multiple documents together, and can perform a variety of operations on the grouped data to return a single result. MongoDB provides three ways to perform aggregation: the aggregation pipeline, the map-reduce function, and single purpose aggregation methods.
+Aggregation operations group values from multiple documents together, and can perform a variety of operations on the grouped data to return a single result. MongoDB provides three ways to perform aggregation: the aggregation pipeline, the map-reduce function, and single purpose aggregation methods.
 
 #####when you need aggregation ?
 - to perform group by

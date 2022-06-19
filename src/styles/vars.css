@@ -19,7 +19,7 @@
 
 body.light {
   --color-bg:#ffffff2e;
-  --color-font: rgb(0, 0, 0);
+  --color-font: rgb(23 140 193);
   --color-postcard: rgba(0, 0, 0, 0.1);
   --color-header: hsl(0, 0%, 100%);
 
@@ -42,7 +42,7 @@ body.light {
 
 body.dark {
   --color-bg: #303030;
-  --color-font: #ffffff;
+  --color-font: rgb(94 184 225);
   --color-postcard: rgb(0 0 0);
   --color-header: rgba(0, 0, 0, 0.774);
 

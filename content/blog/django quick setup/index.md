@@ -7,7 +7,13 @@ thumbnail: ./django.png
 folder: blog
 ---
 
-##Steps
+Django is one of the famous Python framework for fastest way to build web applications and rest APIs using various available plugins.In this article, lets see how you can setup a django project in simple steps.
+
+####Pre-requisites
+[Python](https://www.python.org/downloads/) installed in your machine
+
+
+####Steps
 1. Env setup
 ```shell
     $ pip3 install pipenv

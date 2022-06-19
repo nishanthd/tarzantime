@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "gatsby"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
-import { WiMoonAltThirdQuarter, WiMoonAltFirstQuarter } from 'react-icons/wi';
+import { FaGithub } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaStackOverflow } from 'react-icons/fa';
+import { FiMoon } from 'react-icons/fi';
+import { FiSun } from 'react-icons/fi';
+import { RiQuillPenFill } from 'react-icons/ri';
 
 
 class Layout extends Component {
@@ -14,18 +19,18 @@ class Layout extends Component {
             <input
               type="checkbox"
               onChange={e =>
-                toggleTheme(e.target.checked ? "dark" : "light")
+                toggleTheme(e.target.checked ? "light" : "dark")
               }
-              checked={theme === "dark"}
+              checked={theme === "light"}
               className="tog-checkbox"
             />
-            {theme === "dark" ? (
+            {theme === "light" ? (
               <div className="tog-text">
-                <WiMoonAltFirstQuarter className="header-icon"  color={'white'} />
+                <FiMoon />
               </div>
             ) : (
               <div className="tog-text">
-                <WiMoonAltThirdQuarter size={20} color={'black'} />
+                <FiSun />
               </div>
             )}
           </label>
@@ -40,19 +45,20 @@ class Layout extends Component {
             className="header-title"
             to={`/`}
           >
-            {title}
+           <img src={'../../wind-power.png'} alt="wind power" width={35} height={30}></img> {title}
           </Link>
           <div className="nav-container">
             <ul className="header-nav">
             </ul>
             <ul className="header-link">
-              <li><a href="https://github.com/nishanthd" target="_blank" rel="noopener noreferrer">GitHub</a></li>
               <li>
                 <Link to='/about'>
-                  About
+                  <RiQuillPenFill />
                 </Link>
               </li>
-              <li>|</li>
+              <li><a href="https://github.com/nishanthd" target="_blank" rel="noopener noreferrer"><FaGithub /></a></li>
+              <li><a href="https://linkedin.com/in/nishanth-d/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a></li>
+              <li><a href="https://stackoverflow.com/users/4067249/nishanthd" target="_blank" rel="noopener noreferrer"><FaStackOverflow /></a></li>
               <li>{toggler}</li>
             </ul>
           </div>

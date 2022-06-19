@@ -2,15 +2,21 @@ const remark = require("remark");
 
 module.exports = {
   siteMetadata: {
-    title: `Coding Folders`,
+    title: `CleanArch`,
     author: `nishanthd`,
     description: `A blog for minimalist`,
-    siteUrl: `https://cyberbarbarian.com/`,
+    siteUrl: `https://cleanarch.com/`,
     social: {
       twitter: ``,
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+          shortname: `cleanarch`
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -129,7 +135,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/wind-power.png`,
       },
     },
     `gatsby-plugin-offline`,
